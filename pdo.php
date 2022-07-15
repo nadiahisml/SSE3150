@@ -24,7 +24,7 @@ foreach ( $rows as $row ) {
     echo($row['time']);
     echo("</td><td>");
     echo($row['venue']);
-    echo("</td></tr>\n");
+    echo("</td><th>send email</th><th>status</th><th>remarks</th></tr>\n");
 }
 echo "</table>\n";
 ?>
