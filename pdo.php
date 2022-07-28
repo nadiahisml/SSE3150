@@ -8,7 +8,7 @@
 <?php
 
 //Connect PHP with MYSQL
-$pdo = new PDO('mysql:host=localhost;dbname=adminbackend','root','');
+$pdo = new PDO('mysql:host=localhost;dbname=swiss_collection','root','');
 //MYSQL statement or command
 $stmt = $pdo->query("SELECT * FROM registerseminar");
 //Display the output
