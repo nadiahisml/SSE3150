@@ -46,7 +46,7 @@
                     <h5 style="color:white;">
                     <?php
                        
-                       $sql="SELECT * from adminlogin";
+                       $sql="SELECT * from adminname";
                        $result=$conn-> query($sql);
                        $count=0;
                        if ($result-> num_rows > 0){
@@ -87,9 +87,14 @@
        
             
         <?php
-            if (isset($_GET['variation']) && $_GET['variation'] == "success") {
+            if (isset($_GET['user']) && $_GET['user'] == "success") {
                 echo '<script> alert("User Successfully Added")</script>';
-            }else if (isset($_GET['variation']) && $_GET['variation'] == "error") {
+            }else if (isset($_GET['user']) && $_GET['user'] == "error") {
+                echo '<script> alert("Adding Unsuccess")</script>';
+            }
+            if (isset($_GET['admin']) && $_GET['admin'] == "success") {
+                echo '<script> alert("Admin Successfully Added")</script>';
+            }else if (isset($_GET['admin']) && $_GET['admin'] == "error") {
                 echo '<script> alert("Adding Unsuccess")</script>';
             }
         ?>
@@ -103,3 +108,4 @@
 </body>
  
 </html>
+
