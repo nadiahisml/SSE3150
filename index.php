@@ -3,26 +3,27 @@
 <html lang="en">
 
     <head>
-        <title>I.Insurance</title>
+        <title>NS Insurance</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!--TO GET BOOTSTRAP VIA CDN-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <!--LINK WITH main.css-->
         <link rel="stylesheet" type="text/css" href="main.css">
+        
     </head>
-    
+
     <body>
         <!--NAVIGATION BAR-->
         <nav class="navbar navbar-expand-md">
-            <a class="navbar-brand" href="#">I.Insurance</a>
+            <a class="navbar-brand" href="index.php">NS Insurance</a>
             <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="main-navigation">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link" href="index.php">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="aboutus.htm">About Us</a>
@@ -34,7 +35,7 @@
                         <a class="nav-link" href="gallery.htm">Gallery</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.php">Admin</a>
+                        <a class="nav-link" href="interval.htm">Admin</a>
                     </li>
                 </ul>
             </div>
@@ -94,7 +95,7 @@
                           </tr>
                         </thead>
                         <tbody>
-                          <?php include 'retrieve-data.php'; ?>
+                          <?php /*include 'retrieve-data.php'; ?>
                           <?php if ($result->num_rows > 0): ?>
                           <?php while($array=mysqli_fetch_row($result)): ?>
                           <tr>
@@ -109,7 +110,7 @@
                              <td colspan="3" rowspan="1" headers="">No Data Found</td>
                           </tr>
                           <?php endif; ?>
-                          <?php mysqli_free_result($result); ?>
+                          <?php mysqli_free_result($result); */?>
                         </tbody>
                     </table>
                                         
