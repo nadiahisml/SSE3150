@@ -31,6 +31,15 @@ CREATE TABLE `adminname` (
 -- --------------------------------------------------------
 
 --
+-- Dumping data for table `adminname`
+--
+
+INSERT INTO `adminname` ('admin_id', 'admin_name') VALUES
+(1, 'Nadiah'),
+(2, 'Sorfina'),
+(3, 'Admin')
+
+--
 -- Table structure for table `registerseminar`
 --
 
@@ -54,3 +63,10 @@ CREATE TABLE `user_details` (
   `user_status` enum('Active','Inactive') NOT NULL,
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1_swedish;
 
+--
+-- Dumping data for table `user_details`
+--
+
+INSERT INTO `user_details` ('user_id', 'user_email', 'user_name', 'user_status') VALUES
+(1, 'adi_putra@gmail.com', 'Adi Putra', 'Active'),
+(2, 'john_locke@gmail.com', 'John Locke', 'Active'),
