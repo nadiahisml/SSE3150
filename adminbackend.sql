@@ -29,3 +29,12 @@ CREATE TABLE `adminlogin` (
   `password` varchar(100) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+
+--
+-- Dumping data for table `adminlogin`
+--
+
+INSERT INTO `adminlogin` ('id', `username`, 'password') VALUES
+(1, 'admin', 'admin'),
+(2, 'admin2', 'admin2'),
